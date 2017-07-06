@@ -1,37 +1,141 @@
-header>nav>ul>li>a, section#welcome p, section#camps h3, section#camps p, section#blog p, footer {color:#748890;}
-section#camps>article>a, header>nav>ul>li>a:hover {color:#50b9e1;}
-.nav>li>a:hover {background-color:inherit;}
+body {
+	font-family: LatoLight, sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.6; 
+	padding: 0;
+	margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: Bree Serif;
+	font-weight: normal;
+}
 
-div#slider {background-image:url(../img/layer.png); height:1244px; position:relative; z-index:1;}
-div#slider>img {opacity:0.2; margin:2em}
-div#slider>div {position:absolute; top:200px;}
-div#slider>div>p {font-size:50pt; color:#fff;}
-div>a {background:#e8e8e8; padding:22px 59px; color:#fff;}
+h2 {
+  padding-top: 45px;
+  padding-bottom: 25px;
+}
 
-/*section#welcome{display: none}*/
+#welcome h2,
+#blog h2 {
+  color:#668591
+}
 
-img#animal {position:absolute; top:1100px; margin-left:-15px; opacity:0.1; max-width:1170px;}
-section.offer {background:#99c6d6; color:#fff;}
-article>img {margin-top:3em;}
+p{
+	font-family: LatoLight;
+	font-weight: normal;
+}
 
-section#camps h2, section#blog h2, section#welcome h2 {color:#668591}
-hr {color:#fff; background-color:#fff; border: none; height:1px;}
+#welcome p,
+#camps,
+#blog h3,
+#blog p,
+footer,
+.navbar-default .navbar-nav > li > a {
+  color: #748890;
+}
 
-section#testimonials {background-image:url(../img/bg.jpg); height:820px;}
-section#testimonials>div {margin-top: 35%; margin-bottom: 2%;}
-section#testimonials>div>img {float: left; margin: 0 -1em 0 4em;}
-section#testimonials>div>p {font-size:16pt; color:#fff;}
-section#testimonials>nav>ul>li {background:#fff; width:18px; height:18px; border-radius: 50%; margin: 6px; list-style-type:none;}
-section#testimonials>nav>ul>li>a {color:#fff;}
+.navbar-default .navbar-nav > li > a:hover {color:#50b9e1;}
 
-section#touch {background:#45b3db; color:#fff; height:640px;}
+a > img {vertical-align: inherit;}
 
-img#touch_img {position:absolute; top:3020px; margin-left:-15px; opacity:0.1;}
+.navbar {margin-bottom: 0;} 
+.navbar-nav {margin-top: 17px;}
 
-.form-control {background-color:#45b3db; border:1px solid #fff; border-radius:0%;}
+.navbar-default {
+  background-color: inherit;
+  border:none;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav > li > a {padding: 15px 10px;}
+}
+
+li.social > a, 
+footer .nav > li > a {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#slider {background-image:url(../img/photo_header.png); min-height:900px; background-size: cover;}
+#slider p {font-size:50pt; color:#fff; margin-top:3em; margin-bottom:.7em;}
+#slider a {color:#fff; border:1px solid #fff; padding:22px 59px;}
+
+#offer {
+  background:#99c6d6;
+  background-image:url(../img/offerings_bg.png);
+  background-size: cover;
+  color:#fff;
+}
+
+#offer article {padding-bottom:55px;}
+
+#camps {
+  padding-bottom:80px;
+}
+
+#camps p,
+#camps img {
+  padding-bottom:15px;
+}
+#camps a {
+  color:#50b9e1;
+  border:2px solid #50b9e1;
+  padding:10px 40px;
+}
+
+#camps h3 {
+  display: table-cell;
+  width: 100%;
+}
+
+#camps h3 > div {font-size: 12px;}
+
+.price {
+  background-color: #45b3db;
+  color: #fff;
+  font-size: 20px;
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+hr {
+  color: #748890;
+  background-color: #748890;
+  border: none;
+  height: 1px;
+}
+
+#testimonials {background:#45b3db; background-image:url(../img/comment_bg.png); background-size: cover; min-height:400px;}
+#testimonials .row > div {margin-top: 100px; margin-bottom: 2%;}
+#testimonials div>img {float: left; margin: 0 -1em 0 4em;}
+#testimonials div>p {font-size:16pt; color:#fff;}
+#testimonials nav>ul>li {background:#fff; width:18px; height:18px; border-radius:50%; margin:6px; list-style-type:none;}
+#testimonials nav>ul>li>a {color:#fff;}
+
+#form_bg {
+  background:#45b3db;
+  background-image:url(../img/form_bg.png);
+  background-repeat: no-repeat;
+  min-height:640px;
+  color:#fff;
+}
+
+#form_bg .form-control {
+  background-color:#45b3db;
+  color: #fff;
+  border:1px solid #fff;
+  border-radius:0;
+}
+
+#form_bg .btn-info {
+  background-color: #45b3db;
+  border-color: #fff;
+}
+
 .form-control::-moz-placeholder {color:#fff; font-style: italic;}
 .form-control::-webkit-input-placeholder {color:#fff; font-style: italic;}
-.form-control:focus {background-color:#e8e8e8;}
-.btn-info {background-color: #45b3db; border-color: #fff;}
-
-/*section:first-of-type {margin-top:-75px;}*/
